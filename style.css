@@ -1,0 +1,63 @@
+body{
+    background-color: #aad0b9;
+}
+.acor-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.acor-container .acor-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 1.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif; 
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.acor-container .acor-body p{
+    margin: 0 0 10px;
+}
+.acor-container label{
+    cursor: pointer;
+    display: block;
+    padding: 15px 0px;
+    width: 100%;
+    color: #000000;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;   
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+    border-bottom: 1px solid #969595;
+}
+.acor-container label:hover {
+    color: #ffffff;
+}
+.acor-container input{
+    display: none;
+}
+.acor-container label:before {
+    content: '\276F';
+    float: right;
+}
+.acor-container input:checked + label {
+    color: #FFF;
+}
+.acor-container input:checked + label:before {
+    transition: transform 0.35s;
+    transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
+}

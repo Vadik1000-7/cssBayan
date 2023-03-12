@@ -13,7 +13,7 @@ body{
     line-height: 18px;
     padding: 0 30px;
     box-sizing: border-box;
-    transition: color 0.5s, padding 1.5s;
+    transition: color 0.5s, padding 0.5s;
     overflow: hidden;
     font-family: Verdana, sans-serif; 
     font-size: 16px;
@@ -35,7 +35,7 @@ body{
     font-family: Verdana, sans-serif;   
     font-size: 18px;
     margin: 0 0 5px;
-    transition: color .35s;
+    transition: color 0.35s;
     border-bottom: 1px solid #969595;
 }
 .acor-container label:hover {
@@ -60,4 +60,7 @@ body{
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
+    transition: transform 4s;
+  transform: translate(0, 1%);
+  animation: position_hidden 0.00000000000000000001s 1s forwards;
 }
